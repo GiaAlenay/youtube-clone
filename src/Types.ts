@@ -11,8 +11,7 @@ export interface InitialState {
     videoId: string;
     videoTitle: string;
     videoDescription: string;
-    videoLink: string;
-  
+    videoLink: string;  
     videoThumbnail: string;
     videoDuration: string;
     videoViews: string;
