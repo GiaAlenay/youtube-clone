@@ -1,5 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { configureStore } from "@reduxjs/toolkit/dist/configureStore";
+import { createSlice,configureStore } from "@reduxjs/toolkit";
 import { InitialState } from "../Types";
 
 const initialState: InitialState = {
