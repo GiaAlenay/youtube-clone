@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit/dist/configureStore";
 import { InitialState } from "../Types";
 
 const initialState: InitialState = {
@@ -18,3 +19,12 @@ const YoutubeSlice=createSlice({
 
     
 })
+
+export const store = configureStore({
+    reducer:{
+        youtubeApp:YoutubeSlice.reducer,
+    },
+})
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
